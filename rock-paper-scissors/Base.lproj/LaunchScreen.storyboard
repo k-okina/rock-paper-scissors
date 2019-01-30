@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +17,30 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appicon" translatesAutoresizingMaskIntoConstraints="NO" id="eJo-b2-aYh">
+                                <rect key="frame" x="87" y="234" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="DBb-Om-hWa"/>
+                                    <constraint firstAttribute="height" constant="200" id="pWG-cD-83H"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eJo-b2-aYh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0jY-NZ-19v"/>
+                            <constraint firstItem="eJo-b2-aYh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5ta-AO-d1n"/>
+                            <constraint firstItem="eJo-b2-aYh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Inp-hE-RUE"/>
+                            <constraint firstItem="eJo-b2-aYh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="NzT-tf-GkO"/>
+                            <constraint firstItem="eJo-b2-aYh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="OGM-QH-NAn"/>
+                            <constraint firstItem="eJo-b2-aYh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="TIj-ff-75G"/>
+                            <constraint firstItem="eJo-b2-aYh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="Tz8-WC-rxt"/>
+                            <constraint firstItem="eJo-b2-aYh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZAU-fX-WMg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eJo-b2-aYh" secondAttribute="bottom" constant="233" id="b9E-1y-9gE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eJo-b2-aYh" secondAttribute="trailing" constant="88" id="g38-Rl-Tak"/>
+                            <constraint firstItem="eJo-b2-aYh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hko-a3-MJX"/>
+                            <constraint firstItem="eJo-b2-aYh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="214" id="q78-CU-S0d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +49,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="appicon" width="1024" height="1024"/>
+    </resources>
 </document>
